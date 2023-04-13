@@ -3,25 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Contatos</title>
   </head>
   <body>
-    <p>
-      <a
-        href="https://api.whatsapp.com/send?phone=5513978056909&text=Ol%C3%A1+%2C+gostaria+de+fazer+um+or%C3%A7amento%21"
-        target="_blank"
+    <header class="container">
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" onkeyup="validaNome()" />
+      <div id="txtNome"></div>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" />
+
+      <label for="assunto">Assunto:</label>
+      <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+
+      <button>Enviar</button>
+    </form>
+    <div class="adress">
+      <h2>Endereço:</h2>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.3223541407392!2d-46.70673787477624!3d-23.65289169187541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce512990f97fd3%3A0x599d719b6cbbb99a!2sShopping%20Center%20Santo%20Amaro!5e0!3m2!1spt-BR!2sbr!4v1681356156673!5m2!1spt-BR!2sbr"
+        width="400"
+        height="250"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="contacts">
+      <p>
+        <a
+          href="https://api.whatsapp.com/send?phone=5513978056909&text=Ol%C3%A1+%2C+gostaria+de+fazer+um+or%C3%A7amento%21"
+          target="_blank"
+        >
+          (13) 97805-6909
+        </a>
+      </p>
+      <a href="mailto:Llparcondicionado@outlook.com"
+        >Llparcondicionado@outlook.com</a
       >
-        (13) 97805-6909
-      </a>
-    </p>
-    <a href="mailto:Llparcondicionado@outlook.com"
-      >Llparcondicionado@outlook.com</a
-    >
-    <p>
-      <a href="https://www.instagram.com/llparcondicionado/" target="_blank">
-        @llparconcionado</a
-      >
-    </p>
+      <p>
+        <a href="https://www.instagram.com/llparcondicionado/" target="_blank">
+          @llparconcionado</a
+        >
+      </p>
+    </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
